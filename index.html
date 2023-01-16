@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Froggy Franchise</title>
+</head>
+<body>
+    <div id="container" style="display: none;">
+        <h1>Froggy Franchise</h1>
+        <form id="loginForm" onsubmit="login(event)">
+            <h2>Please Login</h2>
+            <section>
+                <label style="display: block;">Username</label>
+                <input id="username" type="text" />
+            </section>
+
+            <section style="margin-top: 5px;">
+                <label style="display: block;">Password</label>
+                <input id="password" type="password" />
+            </section>
+
+            <section style="margin-top: 10px;">
+                <button type="submit">Login</button>
+            </section>
+        </form>
+
+        <form style="display: none;" id="gameForm" onsubmit="score(event)">
+            <h2>Score a Game</h2>
+            <section>
+                <label style="display: block;">Score by Frame</label>
+                <textarea name="rolls" id="rolls" cols="30" rows="10"></textarea>
+            </section>
+
+            <section style="margin-top: 10px;">
+                <button type="submit">Generate Score</button>
+            </section>
+        </form>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
